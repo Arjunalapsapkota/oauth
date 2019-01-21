@@ -7,7 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/aaio0413/SIFTZ.git"
   },
-  "engines" : { "node" : ">=0.12" } ,
+  "engines": {
+    "node": ">=0.12"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -29,6 +31,9 @@
     "server": "nodemon --watch server server/index.js",
     "server-prod": "node server/index.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -55,8 +60,5 @@
     "react-router-dom": "^4.3.1",
     "reactstrap": "^6.5.0",
     "sequelize": "^4.38.0"
-  },
-  "devDependencies": {
-    "concurrently": "^4.1.0"
   }
 }
