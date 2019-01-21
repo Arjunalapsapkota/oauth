@@ -46,6 +46,9 @@ app.use("/myShiftz", myShiftzRoutes);
 app.get("/", (req, res) => {
   res.render("index");
 });
+app.get("/*", function(req, res) {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
 
 console.log("this is process.env here", process.env.MONGO_DB_URL);
 //connect mongoDB
