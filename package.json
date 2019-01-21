@@ -27,7 +27,7 @@
     "client": "node internals/scripts/client.js",
     "server": "nodemon --watch server server/index.js",
     "server-prod": "node server/index.js",
-    "post-heroku-build": "cd client && npm install && npm run client"
+    "post-heroku-build": "NPM_CONFIG_PRODUCTION=false npm install client && npm run client"
   },
   "dependencies": {
     "axios": "^0.18.0",
