@@ -7,6 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/aaio0413/SIFTZ.git"
   },
+  "engines" : { "node" : ">=0.12" } ,
   "author": "",
   "license": "ISC",
   "bugs": {
