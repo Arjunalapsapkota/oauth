@@ -12,7 +12,6 @@
   "bugs": {
     "url": "https://github.com/aaio0413/SIFTZ/issues"
   },
-  "heroku-postbuild": "cd client && npm install && npm run build",
   "homepage": "https://github.com/aaio0413/SIFTZ#readme",
   "devDependencies": {
     "concurrently": "^4.1.0"
@@ -54,6 +53,7 @@
     "start": "concurrently --kill-others-on-fail \"yarn run server\" \"yarn run client\"",
     "client": "node internals/scripts/client.js",
     "server": "nodemon --watch server server/index.js",
-    "server-prod": "node server/index.js"
+    "server-prod": "node server/index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   }
 }
