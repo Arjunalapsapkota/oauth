@@ -41,11 +41,11 @@
     "reactstrap": "^6.5.0"
   },
   "scripts": {
-    "client-install": "npm install --prefix client",
+    "client-install": "npm install client",
     "start": "node server/index.js",
     "server": "nodemon server/index.js",
-    "client": "npm start --prefix client",
+    "client": "npm start client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "cd client && npm install && npm run client "
   }
 }
